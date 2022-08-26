@@ -11,50 +11,43 @@
       "drugname": "Aciclovir",
       "what": "Protects you from getting viral infections",
       "with": "Usually taken 2-5 times per day, with or without food",
-      "call": "Skin rash\nWheezing\nTightness in chest or throat\nTrouble breathing",
+      "call": "Skin rash, Wheezing, Tightness in chest or throat, Trouble breathing",
       "id": 2
     },
     {
       "drugname": "Dexamethasone",
       "what": "A steroid that reduces nausea, vomitting and swelling",
       "with": "Take after food otherwise you risk damaging your stomach",
-      "call": "High Temperature or chills\nVery upset stomach\nSleepy or confused",
+      "call": "High Temperature or chills, Very upset stomach, Sleepy or confused",
       "id": 3
     },
     {
-      "drugname": "A123rhggdgh",
-      "what": "A steroid that reduces nausea, vomitting and swelling",
-      "with": "Take after food otherwise you risk damaging your stomach",
-      "call": "High Temperature or chills\nVery upset stomach\nSleepy or confused",
+      "drugname": "Co-trimoxazole",
+      "what": "Protects you from getting bacterial infections",
+      "with": "can be taken as a tablet or intravenously",
+      "call": "Bruise or bleed easily, Skin rash, High temp",
       "id": 4
     },
     {
-      "drugname": "A23q45wegrserg",
-      "what": "A steroid that reduces nausea, vomitting and swelling",
-      "with": "Take after food otherwise you risk damaging your stomach",
-      "call": "High Temperature or chills\nVery upset stomach\nSleepy or confused",
+      "drugname": "Cyclophosphamide",
+      "what": "A chemotherapy used to kill cancer cells",
+      "with": "Ideally take tablet form on an empty stomach",
+      "call": "Severe diarrhoea, tightness in chest, difficulty breathing",
       "id": 5
     },
     {
-      "drugname": "Adsgrtghdtrhdfg",
-      "what": "A steroid that reduces nausea, vomitting and swelling",
-      "with": "Take after food otherwise you risk damaging your stomach",
-      "call": "High Temperature or chills\nVery upset stomach\nSleepy or confused",
+      "drugname": "Losartan",
+      "what": "Treats high blood pressure",
+      "with": "Usually in the form of one tablet per day",
+      "call": "Pounding heartbeat, dizziness, sleepiness",
       "id": 6
     },
     {
-      "drugname": "Asdfgsdgs",
-      "what": "A steroid that reduces nausea, vomitting and swelling",
-      "with": "Take after food otherwise you risk damaging your stomach",
-      "call": "High Temperature or chills\nVery upset stomach\nSleepy or confused",
+      "drugname": "Fragmin",
+      "what": "Prevents blood clots forming by thinning the blood",
+      "with": "Usually adminstered as a daily injection",
+      "call": "Painful rash, heavy nose bleeds, severe headaches",
       "id": 7
-    },
-    {
-      "drugname": "Alsdfgsdfg",
-      "what": "A steroid that reduces nausea, vomitting and swelling",
-      "with": "Take after food otherwise you risk damaging your stomach",
-      "call": "High Temperature or chills\nVery upset stomach\nSleepy or confused",
-      "id": 8
     }
   ]
 }

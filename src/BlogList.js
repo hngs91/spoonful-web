@@ -7,6 +7,7 @@ const BlogList = ({ blogs: data }) => {
                 <div className="blog-preview" key={item.id}>
                     <Link to={`/medicines/${item.id}`}>
                         <h2>{item.drugname}</h2>
+
                     </Link>
                 </div>
             ))}

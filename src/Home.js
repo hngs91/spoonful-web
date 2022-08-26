@@ -7,8 +7,6 @@ const Home = () => {
 
     const [filteredData, setFilteredData] = useState([])
 
-    const [selectedDrug, setSelectedDrug] = useState([])
-
     const [value, setValue] = useState("")
 
     const onChange = (event) => {
@@ -33,8 +31,7 @@ const Home = () => {
             </div> */}
 
             <div className="search-container">
-                <div className="search-inner"></div>
-                <input type="text" value={value} onChange={onChange} />
+                <input type="text" value={value} onChange={onChange} placeholder="Enter medication here" />
             </div>
 
             {error && <div>{error}</div>}
