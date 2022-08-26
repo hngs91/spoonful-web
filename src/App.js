@@ -14,7 +14,7 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/medicines/:drugname">
+            <Route path="/medicines/:id">
               <BlogDetails />
             </Route>
             <Route path="*">

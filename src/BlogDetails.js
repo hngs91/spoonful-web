@@ -7,6 +7,12 @@ const BlogDetails = () => {
     const { data: blog, error, isPending } = useFetch('http://localhost:8000/medicines/' + id)
 
 
+    const onPronounce = () => {
+        const filePath = "/" + blog.drugname.toLowerCase() + ".mp3"
+        const audio = new Audio(filePath)
+        audio.play()
+    }
+
     return (
         <div className="blog-details">
             {isPending && <div>Loading...</div>}
@@ -14,6 +20,7 @@ const BlogDetails = () => {
             {blog && (
                 <article>
                     <h1>{blog.drugname}</h1>
+                    <button onClick={() => onPronounce()}>Click here to pronounce</button>
                     <h4>What does it do?</h4>
                     <p>{blog.what}</p>
                     <h4>How do you take it?</h4>

@@ -18,18 +18,8 @@ const Home = () => {
         }))
     }
 
-    // const audio = new Audio("/cyclophosphamide.mp3")
-
-    // const handleClick = () => {
-    //     audio.play();
-    // }
-
     return (
         <div className="home">
-            {/* <div className="audio">
-                <button onClick={handleClick}>Audio</button>
-            </div> */}
-
             <div className="search-container">
                 <input type="text" value={value} onChange={onChange} placeholder="Enter medication here" />
             </div>
