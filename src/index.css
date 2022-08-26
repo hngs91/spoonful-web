@@ -1,21 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
 /* base styles */
 * {
   margin: 0;
-  font-family: "Quicksand";
+  font-family: "Roboto";
   color: #333;
 }
-.navbar {
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  border-bottom: 1px solid #f2f2f2;
-}
+
 .navbar h1 {
-  color: #f1356d;
+  display: block;
+  width: fit-content;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  /* margin-top: 8rem; */
+  font-size: 4rem;
+  background-color: #005EB8;
+  color: white;
 }
 .navbar .links {
   margin-left: auto;
@@ -45,7 +46,7 @@
 }
 .blog-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #005EB8;
   margin-bottom: 8px;
 }
 .blog-preview a{
@@ -109,4 +110,8 @@
 .not-found a {
   display: inline-block;
   margin-top: 1rem;
+}
+
+.search-container {
+  display: inline-block;
 }
