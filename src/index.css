@@ -5,64 +5,66 @@
   font-family: "Roboto";
 }
 
-.navbar h1 {
+.title h1 {
   display: block;
   width: fit-content;
   padding-left: 1rem;
   padding-right: 1rem;
   margin: auto;
   margin-top: 2rem;
-  font-size: 4rem;
+  font-size: 3rem;
   background-color: #005EB8;
   color: white;
 }
 
-/* blog previews / list */
-.blog-preview {
-  padding: 10px 16px;
-  margin: 20px 0;
+/* medicine previews */
+.medicine-preview {
+  width: max-content;
+  margin: auto;
+  padding-inline: .5rem;
   border-bottom: 1px solid #fafafa;
 }
 
-.blog-preview:hover {
+.medicine-preview:hover {
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.blog-preview h2 {
-  font-size: 20px;
+.medicine-preview h2 {
+  font-size: 1.25rem;
   color: #005EB8;
-  margin-bottom: 8px;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
-.blog-preview a {
+.medicine-preview a {
   text-decoration: none;
-  text-align: center;
 }
 
-/* blog details page */
-.blog-details h1 {
+/* medicine details page */
+.medicine-details h1 {
   color: #005EB8;
   margin-bottom: .5rem;
 }
 
-.blog-details h4 {
+.medicine-details h4 {
   margin-bottom: .5rem;
   margin-top: 1rem;
 }
 
-.blog-details p {
-  margin: .5rem auto 
+.medicine-details p {
+  margin: .5rem auto;
+  font-size: .9rem;
 }
 
-.blog-details div {
+.medicine-details div {
   margin-top: 1rem;
 }
 
-.blog-details article {
+.medicine-details article {
   margin-left:2rem;
 }
 
-.blog-details button {
+.medicine-details button {
   background-color:white;
   color: purple;
   border: 0px;
@@ -83,9 +85,6 @@
 
 /* searchbar */
 .search-container {
-  display: inline-block;
-  /* border: 1px solid black; */
-  display: block;
   text-align: center;
   margin-top: 1.5rem;
 }

@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 
-const BlogList = ({ blogs: data }) => {
+const MedicineList = ({ medicines: data }) => {
     return (
-        <div className="blog-list">
+        <div className="medicine-list">
             {data.map((item) => (
-                <div className="blog-preview" key={item.id}>
+                <div className="medicine-preview" key={item.id}>
                     <Link to={`/medicines/${item.id}`}>
                         <h2>{item.drugname}</h2>
                     </Link>
@@ -14,4 +14,4 @@ const BlogList = ({ blogs: data }) => {
     );
 }
 
-export default BlogList;
+export default MedicineList;

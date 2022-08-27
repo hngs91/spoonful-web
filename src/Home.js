@@ -1,5 +1,5 @@
 import useFetch from "./useFetch"
-import BlogList from "./BlogList"
+import MedicineList from "./MedicineList"
 import { useState } from 'react'
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
     const onChange = (event) => {
         setValue(event.target.value)
         setFilteredData(data.filter(item => {
-            const searchTerm = value.toLowerCase()
+            const searchTerm = event.target.value.toLowerCase()
             const drugName = item.drugname.toLowerCase();
             return searchTerm && drugName.startsWith(searchTerm) && drugName !== searchTerm
         }))
@@ -26,7 +26,7 @@ const Home = () => {
 
             {error && <div>{error}</div>}
             {isPending && <div>Loading...</div>}
-            {data && <BlogList blogs={filteredData} />}
+            {data && <MedicineList medicines={filteredData} />}
         </div>
     );
 }

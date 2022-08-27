@@ -2,31 +2,31 @@ import { useParams } from "react-router-dom";
 import useFetch from './useFetch';
 import { Link } from "react-router-dom";
 
-const BlogDetails = () => {
+const MedicineDetails = () => {
     const { id } = useParams();
-    const { data: blog, error, isPending } = useFetch('http://localhost:8000/medicines/' + id)
+    const { data: medicine, error, isPending } = useFetch('http://localhost:8000/medicines/' + id)
 
 
     const onPronounce = () => {
-        const filePath = "/" + blog.drugname.toLowerCase() + ".mp3"
+        const filePath = "/" + medicine.drugname.toLowerCase() + ".mp3"
         const audio = new Audio(filePath)
         audio.play()
     }
 
     return (
-        <div className="blog-details">
+        <div className="medicine-details">
             {isPending && <div>Loading...</div>}
             {error && <div>{error}</div>}
-            {blog && (
+            {medicine && (
                 <article>
-                    <h1>{blog.drugname}</h1>
+                    <h1>{medicine.drugname}</h1>
                     <button onClick={() => onPronounce()}>Click here to pronounce</button>
                     <h4>What does it do?</h4>
-                    <p>{blog.what}</p>
+                    <p>{medicine.what}</p>
                     <h4>How do you take it?</h4>
-                    <p>{blog.with}</p>
+                    <p>{medicine.with}</p>
                     <h4>Call your Doctor if:</h4>
-                    <p>{blog.call}</p>
+                    <p>{medicine.call}</p>
                     <div>
                         <Link to='/'>Search again</Link>
                     </div>
@@ -36,4 +36,4 @@ const BlogDetails = () => {
     );
 }
 
-export default BlogDetails;
+export default MedicineDetails;

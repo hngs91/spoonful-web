@@ -1,21 +1,21 @@
-import Navbar from './Navbar';
+import Title from './Title';
 import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-import BlogDetails from './BlogDetails';
+import MedicineDetails from './MedicineDetails';
 import NotFound from './NotFound';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Title />
         <div className="content">
           <Switch>
             <Route exact path="/">
               <Home />
             </Route>
             <Route path="/medicines/:id">
-              <BlogDetails />
+              <MedicineDetails />
             </Route>
             <Route path="*">
               <NotFound />
